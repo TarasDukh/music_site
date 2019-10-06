@@ -1,0 +1,108 @@
+body{
+    text-align: center;
+    padding: 0px; 
+    width: auto; 
+    font-size: 100%; 
+    margin: 0% 0%;
+    background-image: url(https://www.sabaton.net/wp-content/uploads/2018/09/sabaton_zone_bg-1.jpg)
+}
+
+header{
+    position: fixed;
+    margin-top: -9%;
+}
+
+nav{
+    display: block;
+    position: fixed;
+    left: 19%;
+    width: 100%;
+    margin: -8% auto 30px;
+    font-size: 45px;
+    font-family: fantasy;
+}
+
+ul{
+    align-content: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    float: left;
+    width: 180px;
+}
+
+li ul{
+    position: absolute;
+    height: 0px;
+    visibility: hidden;
+    margin-left: 0;
+    margin-top: 0em;
+}
+
+li a{
+    line-height: 50px;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-bottom: none;
+}
+
+li a:hover{
+    color: aliceblue;
+    background-color: gray;
+}
+
+li:hover ul{
+    height: auto;
+    width: auto;
+    visibility: visible;
+}
+
+li:hover ul li{
+    float: none;  
+}
+
+#submenu {
+    border-bottom: 1px solid black;
+}
+
+main{
+    margin: 0% 8%;
+    color: aliceblue;
+    font-family: cursive;
+    margin-top: 9%;
+    height: 50%;
+}
+
+.bottonSend{
+    position: absolute;
+    left: -50%;
+}
+
+.file{
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+
+.postForm{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.table_text{
+    color: #fff500;
+}
+
+footer{
+    color: aliceblue;
+    position: relative;
+    bottom: 0px;
+}
