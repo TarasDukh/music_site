@@ -6,11 +6,36 @@ body{
     margin: 0% 0%;
     background-image: url(https://www.sabaton.net/wp-content/uploads/2018/09/sabaton_zone_bg-1.jpg)
 }
-
 header{
     position: fixed;
     margin-top: -9%;
 }
+
+header img{
+    animation: 1s ease-out 0s 1 slideLogo;
+}
+
+@keyframes slideLogo{
+    0%{
+        transform: translateY(-100%);
+    }
+    50%{
+       transform: translateY(8%); 
+    }
+    65%{
+        transform: translateY(-4%);
+    }
+    80%{
+        transform: translateY(4%);
+    }
+    95%{
+        transform: translateY(-2%);
+    }-
+    100%{
+        transform: translateY(0%);
+    }
+}
+
 
 nav{
     display: block;
@@ -20,6 +45,18 @@ nav{
     margin: -8% auto 30px;
     font-size: 45px;
     font-family: fantasy;
+    animation-name: scaleNav;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scaleNav{
+    0%{
+        transform: scaleY(-1);
+    }   
+    100%{
+        transform: scaleY(1);
+    }
 }
 
 ul{
@@ -56,17 +93,51 @@ li a{
 li a:hover{
     color: aliceblue;
     background-color: gray;
+    transition-duration: 0.3s;
 }
 
 li:hover ul{
     height: auto;
     width: auto;
     visibility: visible;
+    transition-property: visibility;
+    transition-delay: 0.3s;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideDown{
+    0%{
+        transform: scaleY(0.1);
+    }
+    40%{
+       transform: scaleY(1.02); 
+    }
+    60%{
+        transform: scaleY(0.98);
+    }
+    80%{
+        transform: scaleY(1.01);
+    }
+
+    100%{
+        transform: scaleY(0.98);
+    }
+    
+    80%{
+        transform: scaleY(1.01);
+    }
+
+    100%{
+        transform: scaleY(1);
+    }
 }
 
 li:hover ul li{
     float: none;  
 }
+
 
 #submenu {
     border-bottom: 1px solid black;
